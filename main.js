@@ -267,7 +267,7 @@ function initializeDeviceObjects(deviceId, data, callback) {
             //state.unit = undefined;
         }
         
-        name += state.Tariff !== undefined ? (' (Tarif ' + state.Tariff + ')') : '';
+        name += state.Tariff !== undefined ? (' (Tariff ' + state.Tariff + ')') : '';
         const m2 = (state.unit || '').match(/^([-\deE]+)/);
         let factor = 1;
         if (m2) {
